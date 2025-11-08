@@ -46,17 +46,30 @@ body{
     padding: 2rem 5%;
     margin-bottom: 2rem;
 }
+.favicons{
+    height: 4rem;
+    width: rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0%;
+    box-shadow: 0 0 2.5rem var(--main-color);
+}
+
 .logo{
     font-size: 2rem;
     color: var(--text-color);
     text-transform: capitalize;
     font-weight: 600;
+    margin-right:auto;
 }
 .logo span{
     color: var(--main-color);
     text-transform: capitalize;
+    margin-right: auto;
+    padding-left: .5rem;
+    
 }
-.header .navbar a{
+.header .navbar a{  
     font-size: 1.5rem;
     color: var(--text-color);
     text-transform: capitalize;
@@ -577,101 +590,4 @@ section{
 .footer .credit p i,
 .footer .credit p span{
     color: var(--main-color);
-}
-@media(max-width:990px){
-    html{
-        font-size: 55.5%;
-} 
-    .home{
-        flex-flow: column-reverse;
-        padding: 8rem 0;
-         padding-top: 15rem;
-    }
-}
-
-
-@media(max-width:700px){
-    html{
-        font-size: 50.5%;
-    }
-    .home img{
-        height: 35rem;
-        width: 35rem;
-    }
-    .home{
-        padding: 8rem 0;
-    }
-    section{
-        padding: 1rem;
-    }
-    .header{
-        position: relative;
-        padding: 0;
-    }
-    .header .logo,
-    .header .menu{
-        padding: 1rem;
-    }
-    .menu i{
-        display: flex;
-    }
-    .header .navbar.active{
-        display: grid;
-    }
-    .header .navbar{
-        position: absolute;
-        top: 7rem;
-        display: none;
-        text-align: center;
-        justify-content: center;
-        background-color: var(--main-color);
-        width: 100%;
-        gap: 2rem;
-        padding: 1rem;
-    }
-    .header .navbar a#Home{
-        color: var(--text-color);
-        text-decoration: none;
-    }
-    .header .navbar a{
-        width: 100%;
-        padding: 1rem;
-    }
-    .header .navbar a:hover,
-    .header .navbar a#Home:hover
-    {
-        background-color: var(--white);
-        color: var(--main-color);
-        text-decoration: none;
-
-        
-    }
-}
-@media(max-width:450px){
-    
-    .home .content p{
-        width: 35rem;
-    }
-    .education .timeline-items{
-        display: grid;
-
-    }
-    .contact .form-container form{
-        display: grid;
-       
-    }
-    .contact .form-container form .inputs,
-    .contact .form-container form .text{
-    width: 100%;
-}
-.contact .form-container form .inputs .input,
-.contact .form-container form .text textarea{
-   
-    width: 100%;
-}
-.contact{
-    padding: 1rem 0;
-}
-
-
 }
